@@ -11,19 +11,22 @@ Currently, two official plugins are available:
 -->Steps to Run the Application Locally<br>
 
 1. Clone the Repository or Extract the ZIP:<br>
+   git clone https://github.com/Aashi32/React-Dashboard
+<li>
+<ul>If you have cloned the repository from GitHub, navigate to the project directory.<br></ul>
+<ul>If you have downloaded the ZIP file, extract it to your preferred directory.<br></ul>
+</li>
+2. Install Node.js and npm:
 
-If you have cloned the repository from GitHub, navigate to the project directory.<br>
-If you have downloaded the ZIP file, extract it to your preferred directory.<br>
-Install Node.js and npm:
-
-2. Make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download them from nodejs.org.
-3. Install Project Dependencies:
-
-  1. Open a terminal or command prompt.<br>
-  2. Navigate to the project directory.<br>
-  3. Run the following command to install all necessary dependencies:<br>
+<li> 
+  <ul>Make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download them from nodejs.org.</ul></li>
+3. Install Project Dependencies:<br>
+<li>
+  <ol>Open a terminal or command prompt.<br></ol> 
+  <ol>Navigate to the project directory.<br></ol> 
+  <ol> Run the following command to install all necessary dependencies:<br></ol>
      npm install<br>
-
+</li>
 4. Start the Development Server:<br>
    After the dependencies are installed, start the development server by running:<br>
    npm run dev
