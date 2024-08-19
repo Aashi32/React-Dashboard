@@ -1,0 +1,376 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.dashboard-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard-controls button,
+.dashboard-controls select {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dashboard-controls .refresh-btn {
+  font-size: 16px;
+}
+
+.dashboard-section {
+  margin-top: 20px;
+}
+
+
+.dashboard-row {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.dashboard-column {
+  flex: 1;
+  margin: 10px;
+
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+  min-width: 300px; 
+  max-width: 600px; 
+  height: 400px; 
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.add-widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-widget-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f7fa;
+  cursor: pointer;
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 400px;
+  height: 80%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs .active-tab {
+  background-color: #3a58f6;
+  color: #ffffff;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.widget-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.widget-checkbox {
+  margin-right: 10px;
+}
+
+.widget-label {
+  flex: 1;
+}
+
+.remove-widget {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3a58f6;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.actions button:hover {
+  background-color: #2a46c4;
+}
+
+.actions button:last-child {
+  background-color: #ffffff;
+  color: #3a58f6;
+  border: 1px solid #3a58f6;
+}
+
+
+
+
+
+/* Container styling */
+.namespace-alerts.widget {
+  padding: 20px;
+ 
+  border-radius: 8px;
+  
+}
+
+/* Heading styling */
+.namespace-alerts.widget h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+
+.alerts-content {
+  text-align: center;
+  
+}
+
+
+
+
+/* Centering the entire "no-data" content */
+.no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+  text-align: center;
+}
+
+/* Styling for the image icon */
+.center-icon {/* Adjust the icon size */
+  height: 40px;
+  margin-bottom: 10px; 
+}
+
+/* Container styling */
+.workload-alerts.widget {
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  /* background-color: #f9f9f9; */
+}
+
+/* Heading styling */
+.workload-alerts.widget h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: left;
+
+}
+
+
+.cloud-accounts .cloud-accounts-container {
+  display: flex;
+  align-items: center;
+}
+
+.cloud-accounts .cloud-accounts-details {
+  margin-left: 20px; 
+}
+
+.cloud-accounts .cloud-accounts-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cloud-accounts .cloud-accounts-item .bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+
+.cloud-risk-assessment .cloud-risk-container {
+  display: flex;
+  align-items: center; 
+}
+
+.cloud-risk-assessment .cloud-risk-details {
+  margin-left: 50px;
+}
+
+.cloud-risk-assessment .cloud-risk-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cloud-risk-assessment .cloud-risk-item .bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+
+.registry-scan .vulnerability-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.registry-scan .vulnerability-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 20px;
+  width: 45%; /* Adjust width to control the layout */
+}
+
+.registry-scan .vulnerability-item .bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.image-security .total-images {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.image-security .image-security-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-security .image-security-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 20px;
+  width: 45%; 
+}
+
+.image-security .image-security-item .bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.image-security .widget {
+  width: 100%; /* Make the widget take up the full width */
+  height: auto; /* Automatically adjust height based on content */
+}
+
